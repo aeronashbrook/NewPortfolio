@@ -312,7 +312,7 @@
         margin-right: auto;
         margin-top: 12px;
         margin-bottom: 12px;
-        float: none;
+        float: none; 
     }
     #box6 {
         background-color: rgb(197, 196, 196);
@@ -341,5 +341,68 @@
         font-size: 24px;
         color: black;
         text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+    #aboutdiv1 {
+        width: 280px;
+        height: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 140px;
+    }
+    #about1 {
+        font-size: 22px;
+        float: left;
+        margin-top: 2px;
+        margin-left: 10px;
+    }
+    #about2 {
+        font-size: 24px;
+        font-weight: bold;
+        float: left; 
+        margin-left: 8px;
+    }
+    #about3 {
+        font-size: 22px;
+        float: left;
+        margin-left: 8px;
+        margin-top: 2px;
+    }
+    #about4 {
+        font-size: 24px;
+        font-weight: bold;
+        float: left;
+        margin-left: 30px;
+    }
+    #about5 {
+        font-size: 22px;
+        width: 240px;
+        text-align: right;
+        margin-left: 8px;
+    }
+    #aboutdiv2 {
+        width: 680px;
+        height: 40px;
+        margin: auto;
+    }
+    #about6 {
+        font-size: 22px;
+        margin-left: 32px;
+        margin-top: 2px;
+    }   
+    #about7 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 8px;
+        clear: all;
     }
   }

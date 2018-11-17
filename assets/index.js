@@ -15,4 +15,19 @@ $(document).ready(function(){
         }, function(){
         $("#contactborder").hide();
     });
+    $("#projects").on("click touchend", function(e) {
+        var el = $(this);
+        var link = el.attr("href");
+        window.location = link;
+      });
+      $("#about").on("click touchend", function(e) {
+        var el = $(this);
+        var link = el.attr("href");
+        window.location = link;
+      });
+      $("#contact").on("click touchend", function(e) {
+        var el = $(this);
+        var link = el.attr("href");
+        window.location = link;
+      });
 });

@@ -1,0 +1,253 @@
+.text {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#headingdiv {
+    width: 275px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+}
+#projects {
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+}
+#projectsborder {
+    border-top: solid black 2px;
+    width: 40px;
+    margin-left: 25px;
+    margin-top: 4px;
+}
+#projectsdiv {
+    width: 90px;
+    float: left;
+}
+#about {
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    width: 100px;
+}
+#aboutborder {
+    border-top: solid black 2px;
+    width: 40px;
+    margin-left: 12px;
+    margin-top: 4px;
+}
+#aboutdiv {
+    width: 64px;
+    float: left;
+    margin-left: 18px;
+}
+#contact {
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    text-align: center;
+}
+#contactborder {
+    border-top: solid black 2px;
+    width: 40px;
+    margin-left: 22px;
+    margin-top: 4px;
+}
+#contactdiv {
+    width: 85px;
+    float: left;
+    margin-left: 18px;
+}
+#container{
+    height: 615px;
+    width: 990px;
+    margin: auto;
+    margin-top: 35px;
+}
+.projecttext {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    margin-left: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#box1 {
+    background-image: url(http://www.camp5museum.org/images/home-train.jpg); 
+    background-size: cover;
+    height: 175px;
+    width: 300px;
+    float: left;
+    margin: 15px;
+}
+#box2 {
+    background-image: url(https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F08%2Fgiphy-film-festival-announcement-00.jpg?q=75&w=800&cbr=1&fit=max); 
+    background-size: cover;
+    height: 175px;
+    width: 300px;
+    float: left;
+    margin: 15px;
+}
+#box3 {
+    background-color: rgb(226, 226, 226);
+    height: 175px;
+    width: 300px;
+    float: left;
+    margin: 15px;
+}
+#box4 {
+    background-image: url(https://i.imgur.com/Odbx9vc.jpg); 
+    background-size: cover;
+    height: 175px;
+    width: 465px;
+    margin: 15px 30px 15px 15px;
+}
+#box5 {
+    background-image: url(http://www.amifood.be/wp-content/uploads/2017/04/image-6.jpg); 
+    background-size: cover;
+    height: 380px;
+    width: 465px;
+    float: left;
+    margin: 15px 15px 15px 30px;
+}
+#box6 {
+    background-color: rgb(197, 196, 196);
+    height: 175px;
+    width: 465px;
+    margin: 30px 15px 15px 15px;
+}
+#boxwrap {
+    clear: left;
+    float: left;
+    height: 410px;
+    width: 480px;
+}
+.abouttext {
+    vertical-align: bottom;
+}
+#aboutdiv1 {
+    width: 742px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 180px;
+}
+#about1 {
+    font-size: 42px;
+    float: left;
+    margin-top: 5px;
+}
+#about2 {
+    font-size: 48px;
+    font-weight: bold;
+    float: left; 
+    margin-left: 15px;
+}
+#about3 {
+    font-size: 42px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+#about4 {
+    font-size: 48px;
+    font-weight: bold;
+    float: left;
+    margin-left: 15px;
+}
+#about5 {
+    font-size: 42px;
+    width: 620px;
+    text-align: left;
+    margin: auto;
+}
+#aboutdiv2 {
+    width: 680px;
+    height: 40px;
+    margin: auto;
+    }
+#about6 {
+    font-size: 42px;
+    float: left;
+    margin-top: 5px;
+}   
+#about7 {
+    font-size: 48px;
+    font-weight: bold;
+    float: left;
+    margin-left: 15px;
+}
+#contactheading {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 52px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+    width: 340px;
+
+}
+#phonenumber {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    text-align: center;
+    width: 230px;
+
+}
+#email {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+    width: 400px;
+
+}
+#icondiv {
+    height: 50px;
+    width: 242px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.SMlinks {
+    margin: 5px;
+}
+.contactinfo, #container, #aboutdiv1, #about5, #aboutdiv2  {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

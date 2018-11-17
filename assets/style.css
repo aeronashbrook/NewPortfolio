@@ -184,7 +184,6 @@
     margin-top: 50px;
     text-align: center;
     width: 340px;
-
 }
 #phonenumber {
     font-family: 'Roboto Condensed', sans-serif;
@@ -194,7 +193,6 @@
     margin-top: 70px;
     text-align: center;
     width: 230px;
-
 }
 #email {
     font-family: 'Roboto Condensed', sans-serif;
@@ -204,7 +202,6 @@
     margin-top: 30px;
     text-align: center;
     width: 400px;
-
 }
 #icondiv {
     height: 50px;
@@ -342,16 +339,6 @@
         color: black;
         text-decoration: none;
     }
-
-
-
-
-
-
-
-
-
-
     #aboutdiv1 {
         width: 280px;
         height: 30px;

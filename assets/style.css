@@ -1,3 +1,6 @@
+.projects {
+    cursor: pointer;
+}
 .text {
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -70,57 +73,93 @@
     font-size: 22px;
     margin-left: 20px;
     font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 20px;
 }
-#box1 {
-    background-image: url(http://www.camp5museum.org/images/home-train.jpg); 
+.smallBox {
     background-size: cover;
     height: 175px;
     width: 300px;
-    float: left;
     margin: 15px;
+    position: relative;
 }
-#box2 {
-    background-image: url(https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F08%2Fgiphy-film-festival-announcement-00.jpg?q=75&w=800&cbr=1&fit=max); 
-    background-size: cover;
-    height: 175px;
-    width: 300px;
-    float: left;
-    margin: 15px;
-}
-#box3 {
-    background-color: rgb(226, 226, 226);
-    height: 175px;
-    width: 300px;
-    float: left;
-    margin: 15px;
-}
-#box4 {
-    background-image: url(https://i.imgur.com/Odbx9vc.jpg); 
+.medBox {
     background-size: cover;
     height: 175px;
     width: 465px;
+    position: relative;
+}
+#box1 {
+    background-image: url(http://www.camp5museum.org/images/home-train.jpg); 
+}
+#box2 {
+    background-image: url(https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F08%2Fgiphy-film-festival-announcement-00.jpg?q=75&w=800&cbr=1&fit=max); 
+    bottom: 190px;
+    left: 330px;
+}
+#box3 {
+    background-color: rgb(226, 226, 226);
+    bottom: 380px;
+    left: 660px;
+}
+#box4 {
+    background-image: url(https://i.imgur.com/Odbx9vc.jpg); 
     margin: 15px 30px 15px 15px;
+    bottom: 365px;
 }
 #box5 {
     background-image: url(http://www.amifood.be/wp-content/uploads/2017/04/image-6.jpg); 
     background-size: cover;
     height: 380px;
     width: 465px;
-    float: left;
     margin: 15px 15px 15px 30px;
+    position: relative;
+    left: 480px;
+    bottom: 765px;
+}
+#box5blur {
+    background-image: url(img/portfoliobackground.png);
+    background-size: cover;
+    height: 380px;
+    width: 465px;
+    opacity: 0;
+}
+#box5text {
+    opacity: 0;
 }
 #box6 {
     background-color: rgb(197, 196, 196);
-    height: 175px;
-    width: 465px;
     margin: 30px 15px 15px 15px;
+    bottom: 365px;
 }
-#boxwrap {
-    clear: left;
-    float: left;
-    height: 410px;
-    width: 480px;
+.closeicon {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 15px;
+    left: 910px;
+    cursor: pointer;
 }
+.closeicon:hover {
+    width: 38px;
+    height: 38px;
+}
+.closediv {
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .abouttext {
     vertical-align: bottom;
 }

@@ -65,10 +65,13 @@ $(document).ready(function(){
       var closeBool = 0;
 
       box1.on("click", function(){
-        if (clickBool === 0) {
+        if (clickBool === 0 && box1.css("margin-top") == "11px") {
+          mobileAnimations.m1Animate();
+          clickBool = 1;
+        }  else if (clickBool === 0)  {
           animations.box1start();
           clickBool = 1;
-        }  
+        }
       });
       close1.on("click", function(){
         if (closeBool === 0){
@@ -77,63 +80,93 @@ $(document).ready(function(){
         }
       });
       box2.on("click", function(){
-        if (clickBool === 0) {
+        if (clickBool === 0 && box1.css("margin-top") == "11px") {
+          mobileAnimations.m2Animate();
+          clickBool = 1;
+        }  else if (clickBool === 0)  {
           animations.box2start();
           clickBool = 1;
-        }  
+        }
       });
       close2.on("click", function(){
-        if (closeBool === 0){
-        animations.box2close();
+        if (closeBool === 0  && box1.css("margin-top") == "11px"){
+          mobileAnimations.m2Close();
         closeBool = 1;
+        } else if (closeBool === 0)  {
+          animations.box2close();
+          closeBool = 1;
         }
       });
       box3.on("click", function(){
-        if (clickBool === 0) {
+        if (clickBool === 0 && box1.css("margin-top") == "11px") {
+          mobileAnimations.m3Animate();
+          clickBool = 1;
+        }  else if (clickBool === 0)  {
           animations.box3start();
           clickBool = 1;
-        }  
+        }
       });
       close3.on("click", function(){
-        if (closeBool === 0){
-        animations.box3close();
+        if (closeBool === 0  && box1.css("margin-top") == "11px"){
+          mobileAnimations.m3Close();
         closeBool = 1;
+        } else if (closeBool === 0)  {
+          animations.box3close();
+          closeBool = 1;
         }
       });
       box4.on("click", function(){
-        if (clickBool === 0) {
+        if (clickBool === 0 && box1.css("margin-top") == "11px") {
+          mobileAnimations.m4Animate();
+          clickBool = 1;
+        }  else if (clickBool === 0)  {
           animations.box4start();
           clickBool = 1;
-        }  
+        }
       });
       close4.on("click", function(){
-        if (closeBool === 0){
-        animations.box4close();
+        if (closeBool === 0  && box1.css("margin-top") == "11px"){
+          mobileAnimations.m4Close();
         closeBool = 1;
+        } else if (closeBool === 0)  {
+          animations.box4close();
+          closeBool = 1;
         }
       });
       box5.on("click", function(){
-        if (clickBool === 0) {
+        if (clickBool === 0 && box1.css("margin-top") == "11px") {
+          mobileAnimations.m5Animate();
+          clickBool = 1;
+        }  else if (clickBool === 0)  {
           animations.box5start();
           clickBool = 1;
-        }  
+        }
       });
       close5.on("click", function(){
-        if (closeBool === 0){
-        animations.box5close();
+        if (closeBool === 0  && box1.css("margin-top") == "11px"){
+          mobileAnimations.m5Close();
         closeBool = 1;
+        } else if (closeBool === 0)  {
+          animations.box5close();
+          closeBool = 1;
         }
       });
       box6.on("click", function(){
-        if (clickBool === 0) {
+        if (clickBool === 0 && box1.css("margin-top") == "11px") {
+          mobileAnimations.m6Animate();
+          clickBool = 1;
+        }  else if (clickBool === 0)  {
           animations.box6start();
           clickBool = 1;
-        }  
+        }
       });
       close6.on("click", function(){
-        if (closeBool === 0){
-        animations.box6close();
+        if (closeBool === 0  && box1.css("margin-top") == "11px"){
+          mobileAnimations.m6Close();
         closeBool = 1;
+        } else if (closeBool === 0)  {
+          animations.box6close();
+          closeBool = 1;
         }
       });
 
@@ -146,9 +179,6 @@ $(document).ready(function(){
             box4.fadeTo("fast", 0); 
             box5.fadeTo("fast", 0); 
             box6.fadeTo("fast", 0); 
-            box1title.fadeTo("fast", 0, function() {
-                box1title.css("display", "none");
-            });
           },
           box1animate: function(){
             box1.css("z-index", "9999");
@@ -565,5 +595,125 @@ $(document).ready(function(){
             }, 300);
         }, 
 
+    };
+    var mobileAnimations = {
+      m1Animate: function() {
+        box1.animate({ height: "500px" }, {queue: false });
+        box1blur.animate({ height: "500px" }, {queue: false });
+        box1blur.fadeTo("slow", 1, function(){
+            box1text.fadeTo("fast", 1, function() {
+            });
+          }); 
+      },
+      m2Animate: function() {
+        box2.animate({ height: "500px" }, {queue: false });
+        box2blur.animate({ height: "500px" }, {queue: false });
+        box2blur.fadeTo("slow", 1, function(){
+            box2text.fadeTo("fast", 1, function() {
+            });
+          }); 
+      },
+      m2Close: function() {
+        box2text.fadeTo(50, 0, function() {
+          box2blur.fadeTo("slow", 0, function(){
+          });
+        });
+        box2.animate({ height: "175px" }, {queue: false });
+        box2.animate({ width: "300px" }, {queue: false });
+        box2blur.animate({ height: "175px" }, {queue: false });
+        box2blur.animate({ width: "300px" }, {queue: false });
+        setTimeout(function(){
+          clickBool = 0;
+          closeBool = 0;
+        }, 300);
+      },
+      m3Animate: function() {
+        box3.animate({ height: "500px" }, {queue: false });
+        box3blur.animate({ height: "500px" }, {queue: false });
+        box3blur.fadeTo("slow", 1, function(){
+            box3text.fadeTo("fast", 1, function() {
+            });
+          }); 
+      },
+      m3Close: function() {
+        box3text.fadeTo(50, 0, function() {
+          box3blur.fadeTo("slow", 0, function(){
+          });
+        });
+        box3.animate({ height: "175px" }, {queue: false });
+        box3.animate({ width: "300px" }, {queue: false });
+        box3blur.animate({ height: "175px" }, {queue: false });
+        box3blur.animate({ width: "300px" }, {queue: false });
+        setTimeout(function(){
+          clickBool = 0;
+          closeBool = 0;
+        }, 300);
+      },
+      m4Animate: function() {
+        box4.animate({ height: "500px" }, {queue: false });
+        box4blur.animate({ height: "500px" }, {queue: false });
+        box4blur.fadeTo("slow", 1, function(){
+            box4text.fadeTo("fast", 1, function() {
+            });
+          }); 
+      },
+      m4Close: function() {
+        box4text.fadeTo(50, 0, function() {
+          box4blur.fadeTo("slow", 0, function(){
+          });
+        });
+        box4.animate({ height: "175px" }, {queue: false });
+        box4.animate({ width: "300px" }, {queue: false });
+        box4blur.animate({ height: "175px" }, {queue: false });
+        box4blur.animate({ width: "300px" }, {queue: false });
+        setTimeout(function(){
+          clickBool = 0;
+          closeBool = 0;
+        }, 300);
+      },
+      m5Animate: function() {
+        box5.animate({ height: "500px" }, {queue: false });
+        box5blur.animate({ height: "500px" }, {queue: false });
+        box5blur.fadeTo("slow", 1, function(){
+            box5text.fadeTo("fast", 1, function() {
+            });
+          }); 
+      },
+      m5Close: function() {
+        box5text.fadeTo(50, 0, function() {
+          box5blur.fadeTo("slow", 0, function(){
+          });
+        });
+        box5.animate({ height: "175px" }, {queue: false });
+        box5.animate({ width: "300px" }, {queue: false });
+        box5blur.animate({ height: "175px" }, {queue: false });
+        box5blur.animate({ width: "300px" }, {queue: false });
+        setTimeout(function(){
+          clickBool = 0;
+          closeBool = 0;
+        }, 300);
+      },
+      m6Animate: function() {
+        box6.animate({ height: "500px" }, {queue: false });
+        box6blur.animate({ height: "500px" }, {queue: false });
+        box6blur.fadeTo("slow", 1, function(){
+            box6text.fadeTo("fast", 1, function() {
+            });
+          }); 
+      },
+      m6Close: function() {
+        box6text.fadeTo(50, 0, function() {
+          box6blur.fadeTo("slow", 0, function(){
+          });
+        });
+        box6.animate({ height: "175px" }, {queue: false });
+        box6.animate({ width: "300px" }, {queue: false });
+        box6blur.animate({ height: "175px" }, {queue: false });
+        box6blur.animate({ width: "300px" }, {queue: false });
+        setTimeout(function(){
+          clickBool = 0;
+          closeBool = 0;
+        }, 300);
+      },
     };
 });

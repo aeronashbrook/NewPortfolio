@@ -61,46 +61,83 @@ $(document).ready(function(){
       var box6title = $("#box6title");
       var box6text = $("#box6text");
       var close6 = $("#closeicon6");
-
+      var clickBool = 0;
+      var closeBool = 0;
 
       box1.on("click", function(){
-        animations.box1start();
+        if (clickBool === 0) {
+          animations.box1start();
+          clickBool = 1;
+        }  
       });
       close1.on("click", function(){
-        location.reload();
+        if (closeBool === 0){
+        animations.box1close();
+        closeBool = 1;
+        }
       });
       box2.on("click", function(){
-        animations.box2start();
+        if (clickBool === 0) {
+          animations.box2start();
+          clickBool = 1;
+        }  
       });
       close2.on("click", function(){
-        location.reload();
+        if (closeBool === 0){
+        animations.box2close();
+        closeBool = 1;
+        }
       });
       box3.on("click", function(){
-        animations.box3start();
+        if (clickBool === 0) {
+          animations.box3start();
+          clickBool = 1;
+        }  
       });
       close3.on("click", function(){
-        location.reload();
+        if (closeBool === 0){
+        animations.box3close();
+        closeBool = 1;
+        }
       });
       box4.on("click", function(){
-        animations.box4start();
+        if (clickBool === 0) {
+          animations.box4start();
+          clickBool = 1;
+        }  
       });
       close4.on("click", function(){
-        location.reload();
+        if (closeBool === 0){
+        animations.box4close();
+        closeBool = 1;
+        }
       });
       box5.on("click", function(){
-        animations.box5start();
+        if (clickBool === 0) {
+          animations.box5start();
+          clickBool = 1;
+        }  
       });
       close5.on("click", function(){
-        location.reload();
+        if (closeBool === 0){
+        animations.box5close();
+        closeBool = 1;
+        }
       });
       box6.on("click", function(){
-        animations.box6start();
+        if (clickBool === 0) {
+          animations.box6start();
+          clickBool = 1;
+        }  
       });
       close6.on("click", function(){
-        location.reload();
+        if (closeBool === 0){
+        animations.box6close();
+        closeBool = 1;
+        }
       });
 
-      var animations = {
+    var animations = {
           box1start: function(){
             box2.fadeTo("fast", 0, function() {
                 animations.box1animate();
@@ -114,7 +151,19 @@ $(document).ready(function(){
             });
           },
           box1animate: function(){
+            box1.css("z-index", "9999");
+            $("#zindex").css("z-index", "9000");
+            box2.css("z-index", "-20");
+            box3.css("z-index", "-20");
+            box4.css("z-index", "-20");
+            box5.css("z-index", "-20");
+            box6.css("z-index", "-20");
             box1.css("cursor", "auto");
+            box2.css("cursor", "auto");
+            box3.css("cursor", "auto");
+            box4.css("cursor", "auto");
+            box5.css("cursor", "auto");
+            box6.css("cursor", "auto");
             box1.animate({ height: "585px" }, {queue: false });
             box1.animate({ width: "960px" }, {queue: false });
             box1blur.animate({ height: "585px" }, {queue: false });
@@ -137,7 +186,19 @@ $(document).ready(function(){
             });
           },
           box2animate: function(){
+            box2.css("z-index", "9999");
+            $("#zindex").css("z-index", "9000");
+            box1.css("z-index", "-20");
+            box3.css("z-index", "-20");
+            box4.css("z-index", "-20");
+            box5.css("z-index", "-20");
+            box6.css("z-index", "-20");
+            box1.css("cursor", "auto");
             box2.css("cursor", "auto");
+            box3.css("cursor", "auto");
+            box4.css("cursor", "auto");
+            box5.css("cursor", "auto");
+            box6.css("cursor", "auto");
             box2.animate({ left: "-=330px" }, {queue: false });
             box2.animate({ height: "585px" }, {queue: false });
             box2.animate({ width: "960px" }, {queue: false });
@@ -161,7 +222,19 @@ $(document).ready(function(){
             });
           },
           box3animate: function(){
+            box3.css("z-index", "9999");
+            $("#zindex").css("z-index", "9000");
+            box1.css("z-index", "-20");
+            box2.css("z-index", "-20");
+            box4.css("z-index", "-20");
+            box5.css("z-index", "-20");
+            box6.css("z-index", "-20");
+            box1.css("cursor", "auto");
+            box2.css("cursor", "auto");
             box3.css("cursor", "auto");
+            box4.css("cursor", "auto");
+            box5.css("cursor", "auto");
+            box6.css("cursor", "auto");
             box3.animate({ left: "-=660px" }, {queue: false });
             box3.animate({ height: "585px" }, {queue: false });
             box3.animate({ width: "960px" }, {queue: false });
@@ -185,7 +258,19 @@ $(document).ready(function(){
             });
           },
           box4animate: function(){
+            box4.css("z-index", "9999");
+            $("#zindex").css("z-index", "9000");
+            box1.css("z-index", "-20");
+            box2.css("z-index", "-20");
+            box3.css("z-index", "-20");
+            box5.css("z-index", "-20");
+            box6.css("z-index", "-20");
+            box1.css("cursor", "auto");
+            box2.css("cursor", "auto");
+            box3.css("cursor", "auto");
             box4.css("cursor", "auto");
+            box5.css("cursor", "auto");
+            box6.css("cursor", "auto");
             box4.animate({ top: "-=205px" }, {queue: false });
             box4.animate({ height: "585px" }, {queue: false });
             box4.animate({ width: "960px" }, {queue: false });
@@ -209,7 +294,19 @@ $(document).ready(function(){
             });
           },
           box5animate: function() {
+            box5.css("z-index", "9999");
+            $("#zindex").css("z-index", "9000");
+            box1.css("z-index", "-20");
+            box2.css("z-index", "-20");
+            box3.css("z-index", "-20");
+            box4.css("z-index", "-20");
+            box6.css("z-index", "-20");
+            box1.css("cursor", "auto");
+            box2.css("cursor", "auto");
+            box3.css("cursor", "auto");
+            box4.css("cursor", "auto");
             box5.css("cursor", "auto");
+            box6.css("cursor", "auto");
             box5.animate({ top: "-=205px" }, {queue: false });
             box5.animate({ left: "-=495px" }, {queue: false });
             box5.animate({ height: "585px" }, {queue: false });
@@ -234,6 +331,18 @@ $(document).ready(function(){
             });
           },
           box6animate: function(){
+            box6.css("z-index", "9999");
+            $("#zindex").css("z-index", "9000");
+            box1.css("z-index", "-20");
+            box2.css("z-index", "-20");
+            box3.css("z-index", "-20");
+            box4.css("z-index", "-20");
+            box5.css("z-index", "-20");
+            box1.css("cursor", "auto");
+            box2.css("cursor", "auto");
+            box3.css("cursor", "auto");
+            box4.css("cursor", "auto");
+            box5.css("cursor", "auto");
             box6.css("cursor", "auto");
             box6.animate({ top: "-=410px" }, {queue: false });
             box6.animate({ height: "585px" }, {queue: false });
@@ -244,34 +353,217 @@ $(document).ready(function(){
                 box6text.fadeTo("fast", 1, function() {
                 }); 
             });
-          }
-        //   box5close: function(){
-        //       box5text.fadeTo("fast", 0, function() {
-        //         box5blur.fadeTo("slow", 0, function(){
-        //         });
-        //       });
-        //         box5.css("cursor", "pointer");
-        //         box5.animate({ top: "-=205px" }, {queue: false });
-        //         box5.animate({ left: "-=495px" }, {queue: false });
-        //         box5.animate({ height: "380px" }, {queue: false });
-        //         box5.animate({ width: "465px" }, {queue: false });
-        //         box5blur.animate({ height: "380px" }, {queue: false });
-        //         box5blur.animate({ width: "465px" }, {queue: false }, function(){
-        //             animate.box5finish();
-        //         }); 
-        //   }, 
-        //   box5finish: function() {
-        //     box5title.show();
-        //     box5title.fadeTo("fast", 0, function(){
-        //     });
-        //     box1.fadeTo("fast", 1); 
-        //     box2.fadeTo("fast", 1); 
-        //     box3.fadeTo("fast", 1); 
-        //     box4.fadeTo("fast", 1); 
-        //     box6.fadeTo("fast", 1); 
-        //   },
+          },
+          box1close: function(){
+            box1text.fadeTo("fast", 0, function() {
+              box1blur.fadeTo("slow", 0, function(){
+              });
+            });
+            box1.css("cursor", "pointer");
+            box2.css("cursor", "pointer");
+            box3.css("cursor", "pointer");
+            box4.css("cursor", "pointer");
+            box5.css("cursor", "pointer");
+            box6.css("cursor", "pointer");
+            box1.animate({ height: "175px" }, {queue: false });
+            box1.animate({ width: "300px" }, {queue: false });
+            box1blur.animate({ height: "175px" }, {queue: false });
+            box1blur.animate({ width: "300px" }, {queue: false });
+            $("#zindex").css("z-index", "auto");
+            box1.css("z-index", "auto");
+            box2.css("z-index", "auto");
+            box3.css("z-index", "auto");
+            box4.css("z-index", "auto");
+            box5.css("z-index", "auto");
+            box6.css("z-index", "auto");
+            setTimeout(function(){
+              box5.fadeTo("slow", 1); 
+              box2.fadeTo("slow", 1); 
+              box3.fadeTo("slow", 1); 
+              box4.fadeTo("slow", 1); 
+              box6.fadeTo("slow", 1); 
+            }, 300);
+            setTimeout(function(){
+              clickBool = 0;
+              closeBool = 0;
+            }, 300);
+        }, 
+        box2close: function(){
+            box2text.fadeTo("fast", 0, function() {
+              box2blur.fadeTo("slow", 0, function(){
+              });
+            });
+            box1.css("cursor", "pointer");
+            box2.css("cursor", "pointer");
+            box3.css("cursor", "pointer");
+            box4.css("cursor", "pointer");
+            box5.css("cursor", "pointer");
+            box6.css("cursor", "pointer");
+            box2.animate({ left: "+=330px" }, {queue: false });
+            box2.animate({ height: "175px" }, {queue: false });
+            box2.animate({ width: "300px" }, {queue: false });
+            box2blur.animate({ height: "175px" }, {queue: false });
+            box2blur.animate({ width: "300px" }, {queue: false });
+            $("#zindex").css("z-index", "auto");
+            box1.css("z-index", "auto");
+            box2.css("z-index", "auto");
+            box3.css("z-index", "auto");
+            box4.css("z-index", "auto");
+            box5.css("z-index", "auto");
+            box6.css("z-index", "auto");
+            setTimeout(function(){
+              box5.fadeTo("slow", 1); 
+              box1.fadeTo("slow", 1); 
+              box3.fadeTo("slow", 1); 
+              box4.fadeTo("slow", 1); 
+              box6.fadeTo("slow", 1); 
+            }, 300);
+            setTimeout(function(){
+              clickBool = 0;
+              closeBool = 0;
+            }, 300);
+        }, 
+        box3close: function(){
+            box3text.fadeTo("fast", 0, function() {
+              box3blur.fadeTo("slow", 0, function(){
+              });
+            });
+            box1.css("cursor", "pointer");
+            box2.css("cursor", "pointer");
+            box3.css("cursor", "pointer");
+            box4.css("cursor", "pointer");
+            box5.css("cursor", "pointer");
+            box6.css("cursor", "pointer");
+            box3.animate({ left: "+=660px" }, {queue: false });
+            box3.animate({ height: "175px" }, {queue: false });
+            box3.animate({ width: "300px" }, {queue: false });
+            box3blur.animate({ height: "175px" }, {queue: false });
+            box3blur.animate({ width: "300px" }, {queue: false });
+            $("#zindex").css("z-index", "auto");
+            box1.css("z-index", "auto");
+            box2.css("z-index", "auto");
+            box3.css("z-index", "auto");
+            box4.css("z-index", "auto");
+            box5.css("z-index", "auto");
+            box6.css("z-index", "auto");
+            setTimeout(function(){
+              box5.fadeTo("slow", 1); 
+              box2.fadeTo("slow", 1); 
+              box1.fadeTo("slow", 1); 
+              box4.fadeTo("slow", 1); 
+              box6.fadeTo("slow", 1); 
+            }, 300);
+            setTimeout(function(){
+              clickBool = 0;
+              closeBool = 0;
+            }, 300);
+        }, 
+        box4close: function(){
+            box4text.fadeTo("fast", 0, function() {
+              box4blur.fadeTo("slow", 0, function(){
+              });
+            });
+            box1.css("cursor", "pointer");
+            box2.css("cursor", "pointer");
+            box3.css("cursor", "pointer");
+            box4.css("cursor", "pointer");
+            box5.css("cursor", "pointer");
+            box6.css("cursor", "pointer");
+            box4.animate({ top: "+=205px" }, {queue: false });
+            box4.animate({ height: "175px" }, {queue: false });
+            box4.animate({ width: "465px" }, {queue: false });
+            box4blur.animate({ height: "175px" }, {queue: false });
+            box4blur.animate({ width: "465px" }, {queue: false });
+            $("#zindex").css("z-index", "auto");
+            box1.css("z-index", "auto");
+            box2.css("z-index", "auto");
+            box3.css("z-index", "auto");
+            box4.css("z-index", "auto");
+            box5.css("z-index", "auto");
+            box6.css("z-index", "auto");
+            setTimeout(function(){
+              box5.fadeTo("slow", 1); 
+              box2.fadeTo("slow", 1); 
+              box3.fadeTo("slow", 1); 
+              box1.fadeTo("slow", 1); 
+              box6.fadeTo("slow", 1); 
+            }, 300);
+            setTimeout(function(){
+              clickBool = 0;
+              closeBool = 0;
+            }, 300);
+        }, 
+          box5close: function(){
+              box5text.fadeTo("fast", 0, function() {
+                box5blur.fadeTo("slow", 0, function(){
+                });
+              });
+              box1.css("cursor", "pointer");
+              box2.css("cursor", "pointer");
+              box3.css("cursor", "pointer");
+              box4.css("cursor", "pointer");
+              box5.css("cursor", "pointer");
+              box6.css("cursor", "pointer");
+              box5.animate({ top: "+=205px" }, {queue: false });
+              box5.animate({ left: "+=495px" }, {queue: false });
+              box5.animate({ height: "380px" }, {queue: false });
+              box5.animate({ width: "465px" }, {queue: false });
+              box5blur.animate({ height: "380px" }, {queue: false });
+              box5blur.animate({ width: "465px" }, {queue: false }); 
+              $("#zindex").css("z-index", "auto");
+              box1.css("z-index", "auto");
+              box2.css("z-index", "auto");
+              box3.css("z-index", "auto");
+              box4.css("z-index", "auto");
+              box5.css("z-index", "auto");
+              box6.css("z-index", "auto");
+              setTimeout(function(){
+                box1.fadeTo("slow", 1); 
+                box2.fadeTo("slow", 1); 
+                box3.fadeTo("slow", 1); 
+                box4.fadeTo("slow", 1); 
+                box6.fadeTo("slow", 1); 
+              }, 200);
+              setTimeout(function(){
+                clickBool = 0;
+                closeBool = 0;
+              }, 300);
+          }, 
+          box6close: function(){
+            box6text.fadeTo("fast", 0, function() {
+              box6blur.fadeTo("slow", 0, function(){
+              });
+            });
+            box1.css("cursor", "pointer");
+            box2.css("cursor", "pointer");
+            box3.css("cursor", "pointer");
+            box4.css("cursor", "pointer");
+            box5.css("cursor", "pointer");
+            box6.css("cursor", "pointer");
+            box6.animate({ top: "+=410px" }, {queue: false });
+            box6.animate({ height: "175px" }, {queue: false });
+            box6.animate({ width: "465px" }, {queue: false });
+            box6blur.animate({ height: "175px" }, {queue: false });
+            box6blur.animate({ width: "465px" }, {queue: false });
+            $("#zindex").css("z-index", "auto");
+            box1.css("z-index", "auto");
+            box2.css("z-index", "auto");
+            box3.css("z-index", "auto");
+            box4.css("z-index", "auto");
+            box5.css("z-index", "auto");
+            box6.css("z-index", "auto");
+            setTimeout(function(){
+              box5.fadeTo("slow", 1); 
+              box2.fadeTo("slow", 1); 
+              box3.fadeTo("slow", 1); 
+              box1.fadeTo("slow", 1); 
+              box4.fadeTo("slow", 1); 
+            }, 300);
+            setTimeout(function(){
+              clickBool = 0;
+              closeBool = 0;
+            }, 300);
+        }, 
 
-
-      }
-
+    };
 });

@@ -355,7 +355,7 @@ $(document).ready(function(){
             });
           },
           box1close: function(){
-            box1text.fadeTo("fast", 0, function() {
+            box1text.fadeTo(50, 0, function() {
               box1blur.fadeTo("slow", 0, function(){
               });
             });
@@ -389,7 +389,7 @@ $(document).ready(function(){
             }, 300);
         }, 
         box2close: function(){
-            box2text.fadeTo("fast", 0, function() {
+            box2text.fadeTo(50, 0, function() {
               box2blur.fadeTo("slow", 0, function(){
               });
             });
@@ -424,7 +424,7 @@ $(document).ready(function(){
             }, 300);
         }, 
         box3close: function(){
-            box3text.fadeTo("fast", 0, function() {
+            box3text.fadeTo(50, 0, function() {
               box3blur.fadeTo("slow", 0, function(){
               });
             });
@@ -459,7 +459,7 @@ $(document).ready(function(){
             }, 300);
         }, 
         box4close: function(){
-            box4text.fadeTo("fast", 0, function() {
+            box4text.fadeTo(50, 0, function() {
               box4blur.fadeTo("slow", 0, function(){
               });
             });
@@ -494,7 +494,7 @@ $(document).ready(function(){
             }, 300);
         }, 
           box5close: function(){
-              box5text.fadeTo("fast", 0, function() {
+              box5text.fadeTo(50, 0, function() {
                 box5blur.fadeTo("slow", 0, function(){
                 });
               });
@@ -530,7 +530,7 @@ $(document).ready(function(){
               }, 300);
           }, 
           box6close: function(){
-            box6text.fadeTo("fast", 0, function() {
+            box6text.fadeTo(50, 0, function() {
               box6blur.fadeTo("slow", 0, function(){
               });
             });

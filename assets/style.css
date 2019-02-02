@@ -416,6 +416,9 @@ p {
         right: auto;
         background-position: center;
     }
+    #zindex {
+        width: 100%;
+    }
     .closediv {
         width: 100%;
     }

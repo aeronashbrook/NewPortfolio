@@ -416,13 +416,18 @@ p {
         right: auto;
         background-position: center;
     }
+    .closediv {
+        width: 100%;
+    }
     .closeicon {
+        float: right;
+        left: auto;
+        top: auto;
         width: 20px;
         height: 20px;
-        position: relative;
-        top: 15px;
-        left: 265px;
         cursor: pointer;
+        margin-top: 15px;
+        margin-right: 15px;
     }
     .closeicon:hover {
         width: 22px;
@@ -434,11 +439,14 @@ p {
         margin: auto;
         margin-top: 35px;
     }
+    #box1blur, #box2blur, #box3blur, #box4blur, #box5blur, #box6blur {
+        width: 100%;
+    }
     #box1 {
         background-image: url(http://www.camp5museum.org/images/home-train.jpg); 
         background-size: cover;
         height: 175px;
-        width: 300px;
+        width: 99%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 11px;
@@ -448,7 +456,7 @@ p {
         background-image: url(https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F08%2Fgiphy-film-festival-announcement-00.jpg?q=75&w=800&cbr=1&fit=max); 
         background-size: cover;
         height: 175px;
-        width: 300px;
+        width: 99%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 12px;
@@ -458,7 +466,7 @@ p {
     #box3 {
         background-color: rgb(226, 226, 226);
         height: 175px;
-        width: 300px;
+        width: 99%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 12px;
@@ -469,7 +477,7 @@ p {
         background-image: url(https://i.imgur.com/Odbx9vc.jpg); 
         background-size: cover;
         height: 175px;
-        width: 300px;
+        width: 99%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 12px;
@@ -480,7 +488,7 @@ p {
         background-image: url(http://www.amifood.be/wp-content/uploads/2017/04/image-6.jpg); 
         background-size: cover;
         height: 175px;
-        width: 300px;
+        width: 99%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 12px;
@@ -490,7 +498,7 @@ p {
     #box6 {
         background-color: rgb(197, 196, 196);
         height: 175px;
-        width: 300px;
+        width: 99%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;

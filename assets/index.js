@@ -38,7 +38,6 @@ $(document).ready(function(){
       var box5 = $("#box5");
       var box6 = $("#box6");
       var box1blur = $("#box1blur");
-      var box1title = $("#box1title");
       var box1text = $("#box1text")
       var close1 = $("#closeicon1");
       var box2blur = $("#box2blur");
@@ -74,9 +73,12 @@ $(document).ready(function(){
         }
       });
       close1.on("click", function(){
-        if (closeBool === 0){
-        animations.box1close();
+        if (closeBool === 0  && box1.css("margin-top") == "11px"){
+          mobileAnimations.m1Close();
         closeBool = 1;
+        } else if (closeBool === 0)  {
+          animations.box1close();
+          closeBool = 1;
         }
       });
       box2.on("click", function(){
@@ -605,6 +607,18 @@ $(document).ready(function(){
             });
           }); 
       },
+      m1Close: function() {
+        box1text.fadeTo(50, 0, function() {
+          box1blur.fadeTo("slow", 0, function(){
+          });
+        });
+        box1.animate({ height: "175px" }, {queue: false });
+        box1blur.animate({ height: "175px" }, {queue: false });
+        setTimeout(function(){
+          clickBool = 0;
+          closeBool = 0;
+        }, 300);
+      },
       m2Animate: function() {
         box2.animate({ height: "500px" }, {queue: false });
         box2blur.animate({ height: "500px" }, {queue: false });
@@ -619,9 +633,7 @@ $(document).ready(function(){
           });
         });
         box2.animate({ height: "175px" }, {queue: false });
-        box2.animate({ width: "300px" }, {queue: false });
         box2blur.animate({ height: "175px" }, {queue: false });
-        box2blur.animate({ width: "300px" }, {queue: false });
         setTimeout(function(){
           clickBool = 0;
           closeBool = 0;
@@ -641,9 +653,7 @@ $(document).ready(function(){
           });
         });
         box3.animate({ height: "175px" }, {queue: false });
-        box3.animate({ width: "300px" }, {queue: false });
         box3blur.animate({ height: "175px" }, {queue: false });
-        box3blur.animate({ width: "300px" }, {queue: false });
         setTimeout(function(){
           clickBool = 0;
           closeBool = 0;
@@ -663,9 +673,7 @@ $(document).ready(function(){
           });
         });
         box4.animate({ height: "175px" }, {queue: false });
-        box4.animate({ width: "300px" }, {queue: false });
         box4blur.animate({ height: "175px" }, {queue: false });
-        box4blur.animate({ width: "300px" }, {queue: false });
         setTimeout(function(){
           clickBool = 0;
           closeBool = 0;
@@ -685,9 +693,7 @@ $(document).ready(function(){
           });
         });
         box5.animate({ height: "175px" }, {queue: false });
-        box5.animate({ width: "300px" }, {queue: false });
         box5blur.animate({ height: "175px" }, {queue: false });
-        box5blur.animate({ width: "300px" }, {queue: false });
         setTimeout(function(){
           clickBool = 0;
           closeBool = 0;
@@ -707,9 +713,7 @@ $(document).ready(function(){
           });
         });
         box6.animate({ height: "175px" }, {queue: false });
-        box6.animate({ width: "300px" }, {queue: false });
         box6blur.animate({ height: "175px" }, {queue: false });
-        box6blur.animate({ width: "300px" }, {queue: false });
         setTimeout(function(){
           clickBool = 0;
           closeBool = 0;

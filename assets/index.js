@@ -65,6 +65,7 @@ $(document).ready(function(){
 
       box1.on("click", function(){
         if (clickBool === 0 && box1.css("margin-top") == "11px") {
+          $(".disabled1").css("display", "block");
           mobileAnimations.m1Animate();
           clickBool = 1;
         }  else if (clickBool === 0)  {
@@ -83,6 +84,7 @@ $(document).ready(function(){
       });
       box2.on("click", function(){
         if (clickBool === 0 && box1.css("margin-top") == "11px") {
+          $(".disabled2").css("display", "block");
           mobileAnimations.m2Animate();
           clickBool = 1;
         }  else if (clickBool === 0)  {
@@ -101,6 +103,7 @@ $(document).ready(function(){
       });
       box3.on("click", function(){
         if (clickBool === 0 && box1.css("margin-top") == "11px") {
+          $(".disabled3").css("display", "block");
           mobileAnimations.m3Animate();
           clickBool = 1;
         }  else if (clickBool === 0)  {
@@ -119,6 +122,7 @@ $(document).ready(function(){
       });
       box4.on("click", function(){
         if (clickBool === 0 && box1.css("margin-top") == "11px") {
+          $(".disabled4").css("display", "block");
           mobileAnimations.m4Animate();
           clickBool = 1;
         }  else if (clickBool === 0)  {
@@ -147,7 +151,8 @@ $(document).ready(function(){
       close5.on("click", function(){
         if (closeBool === 0  && box1.css("margin-top") == "11px"){
           mobileAnimations.m5Close();
-        closeBool = 1;
+          $(".noshow5").css("display", "none");
+          closeBool = 1;
         } else if (closeBool === 0)  {
           animations.box5close();
           closeBool = 1;
@@ -155,6 +160,7 @@ $(document).ready(function(){
       });
       box6.on("click", function(){
         if (clickBool === 0 && box1.css("margin-top") == "11px") {
+          $(".disabled6").css("display", "block");
           mobileAnimations.m6Animate();
           clickBool = 1;
         }  else if (clickBool === 0)  {
@@ -326,6 +332,7 @@ $(document).ready(function(){
             });
           },
           box5animate: function() {
+            $(".noshow5").css("display", "block");
             box5.css("z-index", "9999");
             $("#zindex").css("z-index", "9000");
             box1.css("z-index", "-20");
@@ -528,6 +535,7 @@ $(document).ready(function(){
           box5close: function(){
               box5text.fadeTo(50, 0, function() {
                 box5blur.fadeTo("slow", 0, function(){
+                  $(".noshow5").css("display", "none");
                 });
               });
               box1.css("cursor", "pointer");
@@ -610,6 +618,7 @@ $(document).ready(function(){
       m1Close: function() {
         box1text.fadeTo(50, 0, function() {
           box1blur.fadeTo("slow", 0, function(){
+            $(".disabled1").css("display", "none");
           });
         });
         box1.animate({ height: "175px" }, {queue: false });
@@ -620,8 +629,8 @@ $(document).ready(function(){
         }, 300);
       },
       m2Animate: function() {
-        box2.animate({ height: "500px" }, {queue: false });
-        box2blur.animate({ height: "500px" }, {queue: false });
+        box2.animate({ height: "700px" }, {queue: false });
+        box2blur.animate({ height: "700px" }, {queue: false });
         box2blur.fadeTo("slow", 1, function(){
             box2text.fadeTo("fast", 1, function() {
             });
@@ -630,6 +639,7 @@ $(document).ready(function(){
       m2Close: function() {
         box2text.fadeTo(50, 0, function() {
           box2blur.fadeTo("slow", 0, function(){
+            $(".disabled2").css("display", "none");
           });
         });
         box2.animate({ height: "175px" }, {queue: false });
@@ -640,8 +650,8 @@ $(document).ready(function(){
         }, 300);
       },
       m3Animate: function() {
-        box3.animate({ height: "500px" }, {queue: false });
-        box3blur.animate({ height: "500px" }, {queue: false });
+        box3.animate({ height: "570px" }, {queue: false });
+        box3blur.animate({ height: "570px" }, {queue: false });
         box3blur.fadeTo("slow", 1, function(){
             box3text.fadeTo("fast", 1, function() {
             });
@@ -650,6 +660,7 @@ $(document).ready(function(){
       m3Close: function() {
         box3text.fadeTo(50, 0, function() {
           box3blur.fadeTo("slow", 0, function(){
+            $(".disabled3").css("display", "none");
           });
         });
         box3.animate({ height: "175px" }, {queue: false });
@@ -660,8 +671,8 @@ $(document).ready(function(){
         }, 300);
       },
       m4Animate: function() {
-        box4.animate({ height: "500px" }, {queue: false });
-        box4blur.animate({ height: "500px" }, {queue: false });
+        box4.animate({ height: "550px" }, {queue: false });
+        box4blur.animate({ height: "550px" }, {queue: false });
         box4blur.fadeTo("slow", 1, function(){
             box4text.fadeTo("fast", 1, function() {
             });
@@ -670,6 +681,7 @@ $(document).ready(function(){
       m4Close: function() {
         box4text.fadeTo(50, 0, function() {
           box4blur.fadeTo("slow", 0, function(){
+            $(".disabled4").css("display", "none");
           });
         });
         box4.animate({ height: "175px" }, {queue: false });
@@ -680,8 +692,9 @@ $(document).ready(function(){
         }, 300);
       },
       m5Animate: function() {
-        box5.animate({ height: "500px" }, {queue: false });
-        box5blur.animate({ height: "500px" }, {queue: false });
+        $(".noshow5").css("display", "block");
+        box5.animate({ height: "550px" }, {queue: false });
+        box5blur.animate({ height: "550px" }, {queue: false });
         box5blur.fadeTo("slow", 1, function(){
             box5text.fadeTo("fast", 1, function() {
             });
@@ -710,6 +723,7 @@ $(document).ready(function(){
       m6Close: function() {
         box6text.fadeTo(50, 0, function() {
           box6blur.fadeTo("slow", 0, function(){
+            $(".disabled6").css("display", "none");
           });
         });
         box6.animate({ height: "175px" }, {queue: false });

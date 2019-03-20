@@ -1,8 +1,8 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
 .projects {
     cursor: pointer;
-}
-.text {
-    font-family: 'Roboto Condensed', sans-serif;
 }
 #headingdiv {
     width: 275px;
@@ -89,7 +89,7 @@
     position: relative;
 }
 #box1 {
-    background-image: url(http://www.camp5museum.org/images/home-train.jpg); 
+    background-image: url(img/coreclackred.jpg); 
 }
 #box1blur {
     background-image: url(img/portfoliobackground.png);
@@ -102,12 +102,13 @@
     opacity: 0;
 }
 #box2 {
-    background-image: url(https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F08%2Fgiphy-film-festival-announcement-00.jpg?q=75&w=800&cbr=1&fit=max); 
+    background-image: url(img/qrmapport.jpg); 
+    background-position: center;
     bottom: 190px;
     left: 330px;
 }
 #box2blur {
-    background-image: url(img/portfoliobackground.png);
+    background-image: url(img/gray.jpg);
     background-size: cover;
     height: 175px;
     width: 300px;
@@ -133,7 +134,9 @@
     opacity: 0;
 }
 #box4 {
-    background-image: url(https://i.imgur.com/Odbx9vc.jpg); 
+    background-image: url(img/memory.jpg);
+    background-size: cover;
+    background-position: center;
     margin: 15px 30px 15px 15px;
     bottom: 365px;
 }
@@ -168,7 +171,9 @@
     opacity: 0;
 }
 #box6 {
-    background-color: rgb(197, 196, 196);
+    background-image: url(img/otherprojects.jpg);
+    background-size: cover;
+    background-position: center;
     margin: 30px 15px 15px 15px;
     bottom: 365px;
 }
@@ -191,8 +196,7 @@
     cursor: pointer;
 }
 .closeicon:hover {
-    width: 38px;
-    height: 38px;
+    transform: scale(1.1);
 }
 .closediv {
     height: 40px;
@@ -208,34 +212,40 @@
     margin-left: auto;
     margin-right: auto;
 }
+#techDiv1 {
+    width: 224px;
+}
+#techDiv2 {
+    width: 300px;
+}
 #techDiv3 {
-    width: 337px;
+    width: 407px;
 }
 #techDiv5 {
-    width: 355px;
+    width: 405px;
 }
-.textDisplay {
-
+.jsImg {
+    transform: scale(0.87);
 }
 .projectlink {
-    font-size: 18px;
+    font-size: 22px;
     padding: 10px;
-    border: solid 2px;
-    text-decoration: none;
     color: black;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
 }
 .projectlink:hover {
     color: rgb(116, 116, 116);
 }
 h1 {
- margin-top: 40px;
  text-align: center;
 }
 h3 {
-    margin-top: 60px;
     text-align: center;
+}
+.paragraph {
+    text-align: justify;
 }
 #p3 {
     margin-top: 60px;
@@ -256,80 +266,32 @@ p {
     margin-right: 15px;
 }
 .projectlinkdiv {
-    width: 340px;
+    width: 400px;
+    height: 60px;
     margin-left: auto;
     margin-right: auto;
 }
 #projectlinkdiv5 {
-    margin-top: 60px;
+    margin-top: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-.abouttext {
-    vertical-align: bottom;
-}
-#aboutdiv1 {
-    width: 742px;
-    height: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 180px;
-}
-#about1 {
-    font-size: 42px;
-    float: left;
+.displaytext {
     margin-top: 5px;
+
 }
-#about2 {
-    font-size: 48px;
-    font-weight: bold;
-    float: left; 
-    margin-left: 15px;
+.paragraph1 {
+    margin-top: 100px;
 }
-#about3 {
-    font-size: 42px;
-    float: left;
-    margin-left: 15px;
-    margin-top: 5px;
+#techDiv4 {
+    width: 140px;
 }
-#about4 {
-    font-size: 48px;
-    font-weight: bold;
-    float: left;
-    margin-left: 15px;
+.p4 {
+    margin-top: 80px;
 }
-#about5 {
-    font-size: 42px;
-    width: 620px;
-    text-align: left;
-    margin: auto;
-}
-#aboutdiv2 {
-    width: 680px;
-    height: 40px;
-    margin: auto;
-    }
-#about6 {
-    font-size: 42px;
-    float: left;
-    margin-top: 5px;
-}   
-#about7 {
-    font-size: 48px;
-    font-weight: bold;
-    float: left;
-    margin-left: 15px;
-}
+
+
+
+
+
 #contactheading {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 52px;
@@ -359,7 +321,7 @@ p {
 }
 #icondiv {
     height: 50px;
-    width: 242px;
+    width: 244px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -371,7 +333,7 @@ p {
 .connectLinks:hover {
     transform: scale(1.1);
 }
-.contactinfo, #aboutdiv1, #about5, #aboutdiv2  {
+.contactinfo, #aboutMe  {
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
@@ -408,7 +370,26 @@ p {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1050px) {
+    .disabled1, .disabled2, .disabled3, .disabled4, .disabled6 {
+        display: none;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        width: 90%;
+        font-size: 18px;
+    }
+    .paragraph1 {
+        margin-top: 50px;
+    }
+    .projectlink {
+        font-size: 18px !important;
+    }
+    #techDiv3 {
+        width: 330px;
+    }
     #box1, #box2, #box3, #box4, #box5, #box6 {
         left: auto;
         top: auto;
@@ -432,21 +413,22 @@ p {
         margin-top: 15px;
         margin-right: 15px;
     }
-    .closeicon:hover {
-        width: 22px;
-        height: 22px;
-    }
     #container{
         height: 615px;
-        width: 330px;
+        width: 98%;
         margin: auto;
         margin-top: 35px;
     }
     #box1blur, #box2blur, #box3blur, #box4blur, #box5blur, #box6blur {
         width: 100%;
     }
+    #box5blur, #box5text {
+        height: 175px;
+    }
+    .noshow5 {
+        display: none;
+    }
     #box1 {
-        background-image: url(http://www.camp5museum.org/images/home-train.jpg); 
         background-size: cover;
         height: 175px;
         width: 99%;
@@ -456,7 +438,6 @@ p {
         float: none;
     }
     #box2 {
-        background-image: url(https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F08%2Fgiphy-film-festival-announcement-00.jpg?q=75&w=800&cbr=1&fit=max); 
         background-size: cover;
         height: 175px;
         width: 99%;
@@ -477,7 +458,6 @@ p {
         float: none;
     }
     #box4 {
-        background-image: url(https://i.imgur.com/Odbx9vc.jpg); 
         background-size: cover;
         height: 175px;
         width: 99%;
@@ -488,7 +468,6 @@ p {
         float: none;
     }
     #box5 {
-        background-image: url(http://www.amifood.be/wp-content/uploads/2017/04/image-6.jpg); 
         background-size: cover;
         height: 175px;
         width: 99%;
@@ -499,7 +478,6 @@ p {
         float: none; 
     }
     #box6 {
-        background-color: rgb(197, 196, 196);
         height: 175px;
         width: 99%;
         margin-left: auto;
@@ -525,58 +503,5 @@ p {
         font-size: 24px;
         color: black;
         text-decoration: none;
-    }
-    #aboutdiv1 {
-        width: 280px;
-        height: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 140px;
-    }
-    #about1 {
-        font-size: 22px;
-        float: left;
-        margin-top: 2px;
-        margin-left: 10px;
-    }
-    #about2 {
-        font-size: 24px;
-        font-weight: bold;
-        float: left; 
-        margin-left: 8px;
-    }
-    #about3 {
-        font-size: 22px;
-        float: left;
-        margin-left: 8px;
-        margin-top: 2px;
-    }
-    #about4 {
-        font-size: 24px;
-        font-weight: bold;
-        float: left;
-        margin-left: 30px;
-    }
-    #about5 {
-        font-size: 22px;
-        width: 240px;
-        text-align: right;
-        margin-left: 8px;
-    }
-    #aboutdiv2 {
-        width: 680px;
-        height: 40px;
-        margin: auto;
-    }
-    #about6 {
-        font-size: 22px;
-        margin-left: 32px;
-        margin-top: 2px;
-    }   
-    #about7 {
-        font-size: 24px;
-        font-weight: bold;
-        margin-left: 8px;
-        clear: all;
     }
   }

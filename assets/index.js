@@ -629,8 +629,8 @@ $(document).ready(function(){
         }, 300);
       },
       m2Animate: function() {
-        box2.animate({ height: "700px" }, {queue: false });
-        box2blur.animate({ height: "700px" }, {queue: false });
+        box2.animate({ height: "730px" }, {queue: false });
+        box2blur.animate({ height: "730px" }, {queue: false });
         box2blur.fadeTo("slow", 1, function(){
             box2text.fadeTo("fast", 1, function() {
             });
@@ -671,8 +671,8 @@ $(document).ready(function(){
         }, 300);
       },
       m4Animate: function() {
-        box4.animate({ height: "550px" }, {queue: false });
-        box4blur.animate({ height: "550px" }, {queue: false });
+        box4.animate({ height: "590px" }, {queue: false });
+        box4blur.animate({ height: "590px" }, {queue: false });
         box4blur.fadeTo("slow", 1, function(){
             box4text.fadeTo("fast", 1, function() {
             });

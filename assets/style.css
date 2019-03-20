@@ -287,8 +287,20 @@ p {
 .p4 {
     margin-top: 80px;
 }
-
-
+.bold {
+    font-weight: bold;
+}
+.aboutMep {
+    font-size: 32px;
+    text-align: center;
+}
+.aboutMe {
+    display: table-cell;
+    height: 75vh;
+    width: 100vw;
+    padding: 10px;
+    vertical-align: middle;
+}
 
 
 
@@ -297,7 +309,7 @@ p {
     font-size: 52px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 60px;
     text-align: center;
     width: 340px;
 }
@@ -306,7 +318,7 @@ p {
     font-size: 36px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 70px;
+    margin-top: 60px;
     text-align: center;
     width: 230px;
 }
@@ -315,7 +327,7 @@ p {
     font-size: 36px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 60px;
     text-align: center;
     width: 400px;
 }
@@ -324,7 +336,7 @@ p {
     width: 244px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 .SMlinks {
     margin: 5px;
@@ -473,7 +485,7 @@ p {
         width: 99%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 12px;
+        margin-top: 18px;
         margin-bottom: 12px;
         float: none; 
     }
@@ -482,9 +494,12 @@ p {
         width: 99%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 0px;
+        margin-top: 18px;
         margin-bottom: 12px;
         float: none;
+    }
+    .disabled6 {
+        font-size: 18px;
     }
     #boxwrap {
         height: 360px;

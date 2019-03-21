@@ -5,7 +5,7 @@ body {
     cursor: pointer;
 }
 #headingdiv {
-    width: 275px;
+    width: 280px;
     height: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -61,7 +61,7 @@ body {
     float: left;
     margin-left: 18px;
 }
-#container{
+.container{
     height: 615px;
     width: 990px;
     margin: auto;
@@ -201,7 +201,7 @@ body {
 .closediv {
     height: 40px;
 }
-#zindex {
+.zindex {
     height: 800px;
 }
 .techimg {
@@ -277,6 +277,10 @@ p {
 .displaytext {
     margin-top: 5px;
 
+}
+.footerdiv {
+    width: 100%;
+    height: 1px;
 }
 .paragraph1 {
     margin-top: 100px;
@@ -383,6 +387,9 @@ p {
 
 
 @media screen and (max-width: 1050px) {
+    /* .zindex {
+        width: 100%;
+    } */
     .disabled1, .disabled2, .disabled3, .disabled4, .disabled6 {
         display: none;
     }
@@ -409,9 +416,9 @@ p {
         right: auto;
         background-position: center;
     }
-    #zindex {
+    /* .zindex {
         width: 100%;
-    }
+    } */
     .closediv {
         width: 100%;
     }
@@ -425,7 +432,7 @@ p {
         margin-top: 15px;
         margin-right: 15px;
     }
-    #container{
+    .container{
         height: 615px;
         width: 98%;
         margin: auto;
@@ -447,7 +454,6 @@ p {
         margin-left: auto;
         margin-right: auto;
         margin-top: 11px;
-        float: none;
     }
     #box2 {
         background-size: cover;
@@ -457,7 +463,6 @@ p {
         margin-right: auto;
         margin-top: 12px;
         margin-bottom: 12px;
-        float: none;
     }
     #box3 {
         background-color: rgb(226, 226, 226);
@@ -467,7 +472,6 @@ p {
         margin-right: auto;
         margin-top: 12px;
         margin-bottom: 12px;
-        float: none;
     }
     #box4 {
         background-size: cover;
@@ -477,7 +481,6 @@ p {
         margin-right: auto;
         margin-top: 12px;
         margin-bottom: 12px;
-        float: none;
     }
     #box5 {
         background-size: cover;
@@ -486,8 +489,7 @@ p {
         margin-left: auto;
         margin-right: auto;
         margin-top: 18px;
-        margin-bottom: 40px;
-        float: none; 
+        margin-bottom: 18px;
     }
     #box6 {
         height: 175px;
@@ -496,16 +498,9 @@ p {
         margin-right: auto;
         margin-top: 18px;
         margin-bottom: 12px;
-        float: none;
     }
     .disabled6 {
         font-size: 18px;
-    }
-    #boxwrap {
-        height: 360px;
-        width: 318px;
-        float: none;
-        margin: auto;
     }
     #contactheading {
         font-size: 42px;
@@ -519,4 +514,13 @@ p {
         color: black;
         text-decoration: none;
     }
+    .footerdiv {
+        width: 100%;
+        height: 40px;
+        border: solid black;
+    }
   }
+
+@media screen and (max-width: 480px) {
+
+}

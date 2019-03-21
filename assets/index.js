@@ -31,6 +31,12 @@ $(document).ready(function(){
         window.location = link;
       });
 
+      document.addEventListener('touchmove', function(event) {
+        event = event.originalEvent || event;
+        if(event.scale > 1) {
+          event.preventDefault();
+        }
+      }, false);
       var box1 = $("#box1");
       var box2 = $("#box2");
       var box3 = $("#box3");
@@ -190,7 +196,7 @@ $(document).ready(function(){
           },
           box1animate: function(){
             box1.css("z-index", "9999");
-            $("#zindex").css("z-index", "9000");
+            $(".zindex").css("z-index", "9000");
             box2.css("z-index", "-20");
             box3.css("z-index", "-20");
             box4.css("z-index", "-20");
@@ -225,7 +231,7 @@ $(document).ready(function(){
           },
           box2animate: function(){
             box2.css("z-index", "9999");
-            $("#zindex").css("z-index", "9000");
+            $(".zindex").css("z-index", "9000");
             box1.css("z-index", "-20");
             box3.css("z-index", "-20");
             box4.css("z-index", "-20");
@@ -261,7 +267,7 @@ $(document).ready(function(){
           },
           box3animate: function(){
             box3.css("z-index", "9999");
-            $("#zindex").css("z-index", "9000");
+            $(".zindex").css("z-index", "9000");
             box1.css("z-index", "-20");
             box2.css("z-index", "-20");
             box4.css("z-index", "-20");
@@ -297,7 +303,7 @@ $(document).ready(function(){
           },
           box4animate: function(){
             box4.css("z-index", "9999");
-            $("#zindex").css("z-index", "9000");
+            $(".zindex").css("z-index", "9000");
             box1.css("z-index", "-20");
             box2.css("z-index", "-20");
             box3.css("z-index", "-20");
@@ -334,7 +340,7 @@ $(document).ready(function(){
           box5animate: function() {
             $(".noshow5").css("display", "block");
             box5.css("z-index", "9999");
-            $("#zindex").css("z-index", "9000");
+            $(".zindex").css("z-index", "9000");
             box1.css("z-index", "-20");
             box2.css("z-index", "-20");
             box3.css("z-index", "-20");
@@ -371,7 +377,7 @@ $(document).ready(function(){
           },
           box6animate: function(){
             box6.css("z-index", "9999");
-            $("#zindex").css("z-index", "9000");
+            $(".zindex").css("z-index", "9000");
             box1.css("z-index", "-20");
             box2.css("z-index", "-20");
             box3.css("z-index", "-20");
@@ -408,7 +414,7 @@ $(document).ready(function(){
             box1.animate({ width: "300px" }, {queue: false });
             box1blur.animate({ height: "175px" }, {queue: false });
             box1blur.animate({ width: "300px" }, {queue: false });
-            $("#zindex").css("z-index", "auto");
+            $(".zindex").css("z-index", "auto");
             box1.css("z-index", "auto");
             box2.css("z-index", "auto");
             box3.css("z-index", "auto");
@@ -443,7 +449,7 @@ $(document).ready(function(){
             box2.animate({ width: "300px" }, {queue: false });
             box2blur.animate({ height: "175px" }, {queue: false });
             box2blur.animate({ width: "300px" }, {queue: false });
-            $("#zindex").css("z-index", "auto");
+            $(".zindex").css("z-index", "auto");
             box1.css("z-index", "auto");
             box2.css("z-index", "auto");
             box3.css("z-index", "auto");
@@ -478,7 +484,7 @@ $(document).ready(function(){
             box3.animate({ width: "300px" }, {queue: false });
             box3blur.animate({ height: "175px" }, {queue: false });
             box3blur.animate({ width: "300px" }, {queue: false });
-            $("#zindex").css("z-index", "auto");
+            $(".zindex").css("z-index", "auto");
             box1.css("z-index", "auto");
             box2.css("z-index", "auto");
             box3.css("z-index", "auto");
@@ -513,7 +519,7 @@ $(document).ready(function(){
             box4.animate({ width: "465px" }, {queue: false });
             box4blur.animate({ height: "175px" }, {queue: false });
             box4blur.animate({ width: "465px" }, {queue: false });
-            $("#zindex").css("z-index", "auto");
+            $(".zindex").css("z-index", "auto");
             box1.css("z-index", "auto");
             box2.css("z-index", "auto");
             box3.css("z-index", "auto");
@@ -550,7 +556,7 @@ $(document).ready(function(){
               box5.animate({ width: "465px" }, {queue: false });
               box5blur.animate({ height: "380px" }, {queue: false });
               box5blur.animate({ width: "465px" }, {queue: false }); 
-              $("#zindex").css("z-index", "auto");
+              $(".zindex").css("z-index", "auto");
               box1.css("z-index", "auto");
               box2.css("z-index", "auto");
               box3.css("z-index", "auto");
@@ -585,7 +591,7 @@ $(document).ready(function(){
             box6.animate({ width: "465px" }, {queue: false });
             box6blur.animate({ height: "175px" }, {queue: false });
             box6blur.animate({ width: "465px" }, {queue: false });
-            $("#zindex").css("z-index", "auto");
+            $(".zindex").css("z-index", "auto");
             box1.css("z-index", "auto");
             box2.css("z-index", "auto");
             box3.css("z-index", "auto");

@@ -532,12 +532,6 @@ p {
         height: 40px;
         border: solid black;
     }
-    .trial11 {
-        width: 98%;
-        margin: auto;
-        height: 175px;
-        border: dashed black 2px;
-    }
   }
 
 @media screen and (max-width: 480px) {

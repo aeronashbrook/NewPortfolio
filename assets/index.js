@@ -30,13 +30,6 @@ $(document).ready(function(){
         var link = el.attr("href");
         window.location = link;
       });
-
-      document.addEventListener('touchmove', function(event) {
-        event = event.originalEvent || event;
-        if(event.scale > 1) {
-          event.preventDefault();
-        }
-      }, false);
       var box1 = $("#box1");
       var box2 = $("#box2");
       var box3 = $("#box3");

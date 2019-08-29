@@ -1,7 +1,8 @@
 $(document).ready(function(){
     $("#projectsborder").hide();
     $("#contactborder").hide();
-
+    $(".aboutMe").hide();
+    $(".aboutMe").fadeIn(2000).show();
     $("#projects").hover(function(){
         $("#projectsborder").show();
         }, function(){
